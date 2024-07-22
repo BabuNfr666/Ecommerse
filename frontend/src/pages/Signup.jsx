@@ -5,7 +5,7 @@ import imageTobase64 from "../helpers/imageTobase64";
 import axios from "axios";
 import SummaryApi from "../../common";
 import { toast } from "react-toastify";
-
+  
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);

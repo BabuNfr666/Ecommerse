@@ -7,7 +7,7 @@ const userSignin = async (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) throw new Error("All fields are required");
 
-    const user = await userModel.findOne({ email });
+    const user = await userModel.findOne({ where: { email: email } });
 
     if (!user) throw new Error("User not found!");
 
